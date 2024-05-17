@@ -7,6 +7,11 @@ class ResPartner(models.Model):
     remote_id = fields.Integer(string="Remote ID")
     owner = fields.Char(string="Owner ID")
 
+
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'
+    remote_id = fields.Integer(string="Remote ID")
+
 # from odoo import models, fields, api
 
 
